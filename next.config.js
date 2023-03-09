@@ -9,6 +9,9 @@ const withPWA = require("next-pwa")({
   scope: '/',
   runtimeCaching,
   buildExcludes: [/middleware-manifest.json$/],
+  fallbacks: {
+    image: '/icon-512x512.png'
+  }
 });
 
 const nextConfig = withPWA({
