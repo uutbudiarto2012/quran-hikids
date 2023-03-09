@@ -1,11 +1,12 @@
-import React from 'react'
-
 const LoaderAyat = ({ count = 8 }) => {
   const x = new Array(count).fill(1).map((_, i) => i + 1)
   return (
     <>
       {x.map(item => (
-        <div className='border border-slate-200 rounded-lg bg-white animate-pulse my-2 overflow-hidden'>
+        <div
+          key={item}
+          className='border border-slate-200 rounded-lg bg-white animate-pulse my-2 overflow-hidden'
+        >
           <div className='p-3'>
             <div className='inline-flex gap-0.5 p-1.5 text-xs font-semibold rounded-md bg-slate-600 text-slate-50'>
               <div className='font-semibold mb-1 w-3 h-3 mt-1 bg-slate-400 rounded-lg' />

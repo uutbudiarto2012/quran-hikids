@@ -6,6 +6,11 @@ body {
   font-family: 'Noto Naskh Arabic', serif;
 }
 
+.rhap_container.player-custom-audio {
+  background-color: #fff;
+  box-shadow: none;
+}
+
 @layer base {
   body {
     @apply bg-slate-50;
